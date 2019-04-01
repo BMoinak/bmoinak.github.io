@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="timeline.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="icon" href="favicon.png">
+	<title>Moinak Bandyopadhyay</title>
+	<script type="text/javascript">
+		function myFunction() {
+			var x = document.getElementById("topnavbar");
+			if (x.className === "w3-bar topnavbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "w3-bar topnavbar";
+			}
+		}
+		var app = angular.module('myApp', []);
+		app.controller('myCtrl', function($scope) {
+			$scope.email="moinakbanerjee.98@gmail.com";
+			$scope.phone="+919841873084";
+			$scope.github="https://www.github.com/BMoinak"
+			$scope.linkedin="https://www.linkedin.com/in/moinakbandyopadhyay"
+			$scope.nam="Moinak Bandyopadhyay"
+			$scope.skype="moinakbandyopadhyay"
+			$scope.skills=["Java","Java Web Application","Struts","MVC","Servlets","J2EE","JSP","Java Web Application Frameworks","SQL","MySQL","PLSQL","C++","C","Agile Methodologies","SDLC","JIRA","UML","Requirements Engineering","OOAD","LDRA","Selenium","Test Driven Development","CSS","Angular JS","Bootstrap","PHP","HTML","DataStructures & Algorithms","IoT","Embedded Systems","RTOS","Distributed OS","ARM Development","Python","Machine Learning","Azure Cloud Services","AWS","Postgres"]
+			$scope.Experiences = [
+			{
+				company: "Team SRMSAT",
+				short: "SRMSAT",
+				role: "On-Board Computers (OBDH) Engineer",
+				startdate: "Jul,2016",
+				enddate: "Present",
+				description: [
+				"Design Hardware and Software Architecture for OnBoard Computers.",
+				"Develop Bootloader and Implement RTOS.",
+				"Work with ARM and Cortex M4 Microcontrollers.",
+				"Gather requirements from other subsystems."
+				]
+			},
+			{
+				company: "Auckam",
+				short: "Auckam",
+				role: "Firmware Developer Intern",
+				startdate: "Jun,2017",
+				enddate: "Nov,2017",
+				description: [
+				"Write Firmware for various Embedded Systems and IOT Projects.",
+				"Improve firmware of existing project.",
+				"Test firmware of existing project."
+				]
+			},
+			{
+				company: "Teknuance Info Solutions",
+				short: "Teknuance Info Sol.",
+				role: "Research Analyst and Developer Intern",
+				startdate: "Apr,2018",
+				enddate: "May,2018",
+				description: [
+				"Research and Develop new product for the company",
+				"Work on ARMv8 Server-on-Chip, implementation of FPGA, parallel processing architecture.",
+				"Knowledge gathering on parallel computing, Deep Learning Systems, Micro-servers, multi-core GPU and CPU architectures."
+				]
+			},
+			{
+				company: "Zoho Corporation",
+				short: "Zoho Corp.",
+				role: "SDE Intern",
+				startdate: "Jun,2018",
+				enddate: "Jul,2018",
+				description: [
+				"Worked with Manage Engine Desktop Central team, at Patch Management Unit.",
+				"Developed Java Web Applications using Struts, Postgres and MickeyLite."
+				]
+			},
+			{
+				company: "Tata Consultancy Services",
+				short: "TCS",
+				role: "Project Trainee(Intern)",
+				startdate: "Jan,2019",
+				enddate: "Mar,2019",
+				description: [
+				"Worked with Cloud, Microservices and APIfication unit, developing webapps using Angular JS, Java and deployment on Azure Cloud Services.",
+				" Developed an end to end hiring portal with all functionalities from verification to billing, hosted as Azure WebApps."
+				]
+			},
+
+
+			];
+			$scope.Projects = [
+			{
+				name: "Credit Card Fraud Detection Using Hybrid Model",
+				startdate: "Oct, 2018",
+				enddate: "March, 2019",
+				description: [
+				"Hybrid Algorithm of K-Nearest Neighbours and Convolutional Neural Networks",
+				"Hosted on Microsoft Azure","APIs to predict the outcome of a transaction",
+				"More than 10% growth in accuracy"
+				],
+				link: "https://www.github.com/BMoinak/credit-card-fraud-detection"
+			},
+			{
+				name: "API based Stock Market Enquiry",
+				startdate: "Oct, 2018",
+				enddate: "Oct, 2018",
+				description: [
+				"A portal to enquire about the stock details of a particular company",
+				"Fetching List of Companies from CSV to MySQL",
+				"Make API calls to identify stock details and the changes in stock-prices based on time-stamp"
+				],
+				link: "https://www.github.com/BMoinak/stock-details-api"
+			},
+			{
+				name: "API based Ticket Booking",
+				startdate: "Sept, 2018",
+				enddate: "Sept, 2018",
+				description: [
+				"An API first method for movie ticket booking",
+				"Handling REST API calls and JSON Parsing",
+				"APIs to enquire about available seats, book seats, and check all seat details"
+				],
+			},
+
+			{
+				name: "BitBot, Chatbot for Cryptocurrency",
+				startdate: "April, 2018",
+				enddate: "May, 2018",
+				description: [
+				"Chatbot for Crypto-Currency developed on IBM Watson Conversation(Assistant)",
+				"Implemented on facebook messenger and webpage https://bmoinak.github.io/BitBot/",
+				"Hosted on IBM Cloud Application(.jS)"
+				],
+				link: "https://github.com/BMoinak/BitBot"
+			},
+			{
+				name: "Smart Digital ID Card",
+				startdate: "Feb, 2018",
+				enddate: "April, 2018",
+				description: [
+				"Digital ID Cards for students and elderly.",
+				"For Notifications, assignments, medical appointments.",
+				"GPS, SOS message capabilities for safety of children.",
+				"Developed using ESP8266 &/or GSM Module with E-paper Display"
+				],
+				link: "https://github.com/BMoinak/Smart-Digital-ID-Card"
+			},
+			{
+				name: "Reader’s Paradise – Web Application, Social Network Platform",
+				startdate: "Aug, 2017",
+				enddate: "Oct, 2017",
+				description: [
+				"A social networking platform to write diary, store online, and share them anonymously.",
+				"Developed using HTML, CSS, PHP and MySQL",
+				],
+				link: "https://github.com/BMoinak/ReadersParadise"
+			},
+
+			];
+			$scope.Achievements=[
+				"Won Best Project Award at Indian Science Congress Association- Chennai Chapter, 2015",
+				"Won 3rd prize in Inter-School Coding Competition at Don Bosco Fest, Kolkata, 2013",
+				"Stood 3rd in Code Enigma (Competitive-Coding Event), 2016",
+				"Certificate for Outstanding Performance at SRM CodeZest-2019, 2018",
+				"Finalist at Techgig Code Gladiators,2018 presented by Deloitte, 2018",
+				"Semi-Finalist at TCS Enginx, 2018"
+			]
+			$scope.openlink=function(txt)
+			{
+				window.open(txt,'_blank');
+			}
+		});
+$(document).ready(function () {
+	$('.w3-bar .opt').click(function(e) {
+// window.alert("fuck");
+$('.w3-bar .opt.act').removeClass('act');
+// window.alert("you")
+var $parent = $(this);
+// window.alert(JSON.stringify($parent));
+$parent.addClass('act');
+e.preventDefault();
+});
+});
+</script>
+<style>
+body{
+	background: linear-gradient(to right, #0f141c, #212e42 , #0f141c);
+}
+.topnavbar
+{
+	background: #274066;
+	font-family: Courier New, Courier, monospace;
+}
+span
+{
+	color: white!important;
+}
+.opt:hover{
+	cursor: pointer;
+	color: #099642!important;
+
+}
+.opt
+{
+	font-size: 1.2em;
+}
+.rightalign
+{
+	float: right!important;
+}
+.linkicon:hover{
+	cursor: pointer;
+}
+.act
+{
+	font-weight: 900!important;	
+	color: #099642!important;
+	/*text-decoration: underline!important;*/
+	/*text-shadow: 2px 2px 8px grey!important;*/
+		/*padding:0!important;
+		border: 0.5px solid white;
+		border-radius: 5px;*/
+	}
+	.topnavbar .icon {
+		display: none;
+	}
+
+
+	@media screen and (max-width: 830px) {
+		.topnavbar .opt{
+			display: none;
+		}
+		.topnavbar .opt.icon {
+			display: block;
+			float:right!important;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.w3-container{
+			width: 100vw!important;
+			font-size: 1.1em;
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.projects{
+			height: auto!important;
+			margin: 10px 0px!important;
+		}
+		.timeline{
+			max-width:90%!important;
+			margin-left: 30vw!important;
+		}
+	}
+
+	@media screen and (max-width: 830px) {
+		.topnavbar .responsive {position: relative;}
+		.responsive .icon{
+			position: absolute;
+			right: 0;
+			float:right!important;
+			top: 0;
+		}
+		.rightalign{
+			float:none!important;
+		}
+		.responsive .opt {
+			clear: both;
+			float:none!important;
+			display: block;
+			text-align: center;
+		}
+	}
+</style>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl" ng-init="show='overview'">
+	<div class="w3-bar topnavbar" id="topnavbar" style="position: fixed;top:0;width: 100%; z-index: 10;">
+		<span class="w3-bar-item" style="font-weight: bold; font-size: 1.5em;">MOINAK BANDYOPADHYAY</span>
+		<div class="rightalign">
+			<span  class="act w3-bar-item opt" onclick="myFunction()" ng-click="show='overview'">Overview</span>
+			<span class="w3-bar-item opt" onclick="myFunction()" ng-click="show='projects'">Projects</span>
+			<span class="w3-bar-item opt" onclick="myFunction()" ng-click="show='experience'">Experience</span>
+			<span class="w3-bar-item opt" onclick="myFunction()" ng-click="show='contact'">Contact</span>
+			<span href="javascript:void(0);" class="icon w3-bar-item opt" onclick="myFunction()"><i class="fa fa-bars"></i></span>
+		</div>			
+	</div>
+	<div style="margin-top: 4em;">
+		<div class="w3-container w3-animate-opacity" style="background: #ffffff8f;width:70vw;margin: 20px auto;border-radius: 10px;padding: 10px 0 0 0;" ng-if="show=='overview'">
+			<div class="w3-container w3-center">
+				<img src="pic2.png" height="200px" width="200px">
+			</div>
+			<br>
+			<div class="w3-container">
+				<div class="w3-xlarge" style="color: #163a24;font-family: Impact, Charcoal, sans-serif;">OVERVIEW</div>
+				Hello! My name is Moinak, and I am a Software Developer living in Bangalore,India. Currently, I am a final year B.Tech undergrad pursuing Software Engineering at SRM Institute of Science & Technology.<br>
+				I specialise in Java Application Development, along with Front-end development with Angular JS, and bootstrap. However, with a diverse set of skills and a knack for quickly picking up new technologies, I can develop on any tech stack with ease. I am also well versed with Azure and AWS cloud services.<br>
+				I have also worked extensively with embedded systems and IoT. It started with building a robot for a physics project, followed by working on ARM Micro-controllers at Team SRMSAT, the space research team at SRMIST.
+				<div class="w3-large w3-center" style="color: #163a24;font-family: Impact, Charcoal, sans-serif;">"I design, build, operate & sometimes rescue full-stack web applications."</div>
+
+				Looking for a full-time developer position at a product-based company/startup environment. Want to discuss a project? Mail me at <a href="mailto:{{email}}">{{email}}</a>
+				<br><br>
+				<div class="w3-xlarge w3-padding-top" style="color: #163a24;font-family: Impact, Charcoal, sans-serif;">SKILLS</div>
+				<label style="margin: 12px 2px;font-family: 'Saira', sans-serif; " ng-repeat="x in skills| orderBy">{{x}}<label ng-if="$index!=skills.length-1">, </label></label><br><br>
+				<div class="w3-xlarge w3-padding-top" style="color: #163a24;font-family: Impact, Charcoal, sans-serif;">ACHIEVEMENTS</div>
+				<ul><li style="font-family: 'Saira', sans-serif; " ng-repeat="x in Achievements">{{x}}</li></ul>
+			</div>
+			<br>
+		</div>
+		<div class="w3-container" ng-if="show=='projects'" style="padding: 0;">
+			<div class="w3-container w3-xlarge" style="color: #163a24;font-family: Impact, Charcoal, sans-serif; background: #ffffff8f;">PROJECTS
+				<div style="text-decoration:none; color: #163a24; padding: 0;" class="linkicon w3-right" title="Find Other Projects at Github/BMoinak" ng-click="openlink(github)"><i class="fa fa-github"></i></div>
+			</div>
+			<div class="w3-col s12 l4 w3-container"  ng-repeat="x in Projects" style="padding:0;">
+				<div class="w3-container projects w3-animate-opacity" style="background: #ffffff8f; border-radius: 5px; margin: 10px 2px;height: 300px;">
+					<div class="" style="color: #163a24;font-family: Impact, Charcoal, sans-serif;">{{x.name}}</div>
+					<div class="w3-small w3-right" style="color: #163a24;font-family: Impact, Charcoal, sans-serif;">{{x.startdate}} to {{x.enddate}}</div><br>
+					<div class="w3-left" style="color: #163a24;font-family: Impact, Charcoal, sans-serif;">Description</div><br>
+					<ul><li ng-repeat="y in x.description">{{y}}</li>
+					</ul>
+					<button ng-if="x.link!=null" class="w3-button w3-padding w3-center" style="border-radius:10px; background: #163a24; color: white;font-family: Courier New, Courier, monospace; " ng-click="openlink(x.link)">Project Link</button><br><br>
+				</div>
+			</div>
+		</div>
+		<div class="w3-container" ng-if="show=='experience'" style="padding: 0;">
+			<div class="w3-container w3-xlarge" style="color: #163a24;font-family: Impact, Charcoal, sans-serif; background: #ffffff8f;">EXPERIENCES
+				<div style="text-decoration:none; color: #163a24; padding: 0;" class="linkicon w3-right" title="Find More Details on LinkedIn" ng-click="openlink(linkedin)"><i class="fa fa-linkedin"></i></div>
+			</div>
+			<div id="content">
+				<ul class="timeline w3-animate-opacity">
+					<li class="event" startdate="{{x.startdate}}" enddate="{{x.enddate}}" ng-repeat="x in Experiences">
+						<h1>{{x.role}},</h1>
+						<h3>{{x.company}}</h3>
+						<p><ul><li ng-repeat="y in x.description">{{y}}</li></ul></p>
+					</li>
+					<li class="event" startdate="<Unknown>" enddate="<Unknown>">
+						<h1 style="color: yellow!important;">&lt;Unknown&gt;,</h1>
+						<h3 style="color: yellow!important;">&lt;Unknown&gt;</h3>
+						<p style="color: yellow!important;">Looking for a Full-Time Opportunity at a Start-Up / Product Based Company.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="w3-container w3-animate-opacity" style="background: #ffffff8f;width:70vw;margin: 20px auto;border-radius: 10px;padding: 10px 0 0 0;" ng-if="show=='contact'">
+			<br>
+			<div class="w3-container ">
+				<div class="w3-xlarge" style="color: #163a24;font-family: Impact, Charcoal, sans-serif;">CONTACT</div><br>
+				<a class="linkicon" style="word-wrap: break-word; text-decoration:none; " title="Email Any Queries" href="mailto:{{email}}"><i style=" color: #163a24; padding: 0;" class="fa fa-envelope"></i>: {{email}}</a><br><br>
+				<a class="linkicon" style="word-wrap: break-word; text-decoration:none; " title="Feel Free to Call" href="tel:{{phone}}"><i style="color: #163a24; padding: 0;" class="fa fa-phone"></i>: {{phone}}</a><br><br>
+				<div class="linkicon" style="word-wrap: break-word;" title="Find More Details on LinkedIn" ng-click="openlink(linkedin)"><i style="text-decoration:none; color: #163a24; padding: 0;" class="fa fa-linkedin"></i>: {{linkedin}}</div><br>
+				<div class="linkicon" style="word-wrap: break-word;" title="Find More Projects on Github" ng-click="openlink(github)"><i style="text-decoration:none; color: #163a24; padding: 0;" class="fa fa-github"></i>: {{github}}</div><br>
+				<div class="linkicon" style="word-wrap: break-word;" title="Connect on Skype"><i style="text-decoration:none; color: #163a24; padding: 0;" class="fa fa-skype"></i>: {{skype}}</div>
+			</div>
+			<br>
+		</div>
+	</div>
+</body>
+</html>
